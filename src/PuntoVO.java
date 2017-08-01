@@ -3,6 +3,7 @@ public class PuntoVO {
 	Integer x;
 	Integer y;
 	Integer c;
+	String cadena;
 	
 	public PuntoVO() {
 		super();
@@ -11,14 +12,25 @@ public class PuntoVO {
 
 	@Override
 	public String toString() {
-		return "PuntoVO [x=" + x + ", y=" + y + ", c=" + c + "]";
+		return "PuntoVO [x=" + x + ", y=" + y + ", c=" + c + ", cadena=" + cadena + "]";
 	}
 
-	public PuntoVO(Integer x, Integer y, Integer c) {
+	
+
+	public String getCadena() {
+		return cadena;
+	}
+
+	public void setCadena(String cadena) {
+		this.cadena = cadena;
+	}
+
+	public PuntoVO(Integer x, Integer y, Integer c, String cadena) {
 		super();
 		this.x = x;
 		this.y = y;
 		this.c = c;
+		this.cadena = cadena;
 	}
 
 	public Integer getX() {

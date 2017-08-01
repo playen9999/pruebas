@@ -6,6 +6,7 @@ public class Main {
 		punto.setX(1);
 		punto.setY(2);
 		punto.setC(4);
+		punto.setCadena("Cadena");
 		System.out.println(punto.toString());
 
 	}
